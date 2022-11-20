@@ -45,6 +45,9 @@
             android:name=".SignUpActivity"
             android:exported="false"
             android:theme="@style/Theme.HealHere.NoActionBar" />
+        <activity android:name=".SignInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HealHere.NoActionBar"/>
         <activity
             android:name=".SelfAssessmentResultsActivity"
             android:exported="false"

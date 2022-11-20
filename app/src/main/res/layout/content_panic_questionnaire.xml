@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panic Test"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/panic_question_one"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1. Have you ever experienced an abrupt surge of intense fear or discomfort seemingly out of the blue, that lasted several minutes? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_one_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_one_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Yes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_one_no"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="No"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_two"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="2. If yes, have you experienced any of the following symptoms during those minutes? Palpitations, pounding heart, or accelerated heart rate? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_two_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_two_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_two_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_two_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_two_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_two_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_three"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="3. Sweating? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_three_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_three_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_three_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_three_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_three_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_three_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_four"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="4. Trembling or shaking? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_four_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_four_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_four_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_four_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_four_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_four_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_five"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="5. Shortness of breath or a feeling that you are being smothered? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_five_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_five_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_five_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_five_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_five_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_five_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_six"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="6. Feeling like you are choking? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_six_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_six_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_six_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_six_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_six_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_six_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_seven"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="7. Chest pain or discomfort? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_seven_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_seven_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_seven_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_seven_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_seven_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_seven_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_eight"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="8. Nausea or stomach ache? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_eight_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_eight_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eight_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eight_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eight_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eight_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_nine"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="9. Feeling dizzy, light-headed or faint? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_nine_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_nine_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_nine_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_nine_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_nine_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_nine_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_ten"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="10. Chills or heat sensations? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_ten_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_ten_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_ten_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_ten_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_ten_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_ten_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_eleven"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="11. \u0022Pins and needles\u0022 (numbness or a tingling sensation)?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_eleven_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_eleven_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eleven_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eleven_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eleven_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eleven_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_twelve"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="12. A feeling that you are crazy or losing control?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_twelve_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_twelve_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_twelve_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_twelve_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_twelve_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_twelve_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_thirteen"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="13. A sense of being detached from yourself or your surroundings, or observing yourself from outside your body?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_thirteen_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_thirteen_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_thirteen_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_thirteen_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_thirteen_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_thirteen_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_fourteen"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="14. Worried that you are going to die?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_fourteen_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_fourteen_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_fourteen_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_fourteen_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_fourteen_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_fourteen_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_fifteen"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="15. For at least one month after you've had the experience, have you worried that you might experience these symptoms again?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_fifteen_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_fifteen_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_fifteen_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_fifteen_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_fifteen_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_fifteen_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_sixteen"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="16. Taken steps to avoid a repeat attack - for example, avoiding unfamiliar situations?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_sixteen_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_sixteen_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_sixteen_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_sixteen_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_sixteen_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_sixteen_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_seventeen"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="17. Have you ever been diagnosed with cardiac arrhythmias, hyperthyroidism, asthma, COPD, or irritable bowel syndrome?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_seventeen_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_seventeen_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Yes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_seventeen_no"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="No"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_eighteen"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="18. Do you have a fear of a certain situation, animal, or object that causes you to experience this panic, sweating, trembling, and/or heart palpitations?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_eighteen_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_eighteen_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eighteen_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eighteen_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eighteen_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_eighteen_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_nineteen"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="19. Do you experience persistent and excessive worry about a number of different things, so much so that it interferes with your daily life?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_nineteen_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_nineteen_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_nineteen_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_nineteen_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_nineteen_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_nineteen_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/panic_question_twenty"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="20. Do people tell you that you look nervous?"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/panic_twenty_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/panic_twenty_always"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Always"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_twenty_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_twenty_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_twenty_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/panic_twenty_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

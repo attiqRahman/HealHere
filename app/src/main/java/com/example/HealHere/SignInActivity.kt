@@ -16,6 +16,7 @@ class SignInActivity : AppCompatActivity() {
 
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        sqlitehelper = SQLHelper(this)
 
         initComponent()
     }

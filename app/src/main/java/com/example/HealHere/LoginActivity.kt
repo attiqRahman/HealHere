@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun initComponent() {
         binding.content.btnSignIn.setOnClickListener() {
-            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+            val intent = Intent(this@LoginActivity, SignInActivity::class.java)
             startActivity(intent)
         }
 

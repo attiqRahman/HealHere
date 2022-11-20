@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anxiety Test"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/anxiety_question_one"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1. Do you worry about lots of different things? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_one_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_one_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_one_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_one_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_one_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_one_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_two"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="2. Do you have trouble controlling your worries? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_two_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_two_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_two_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_two_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_two_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_two_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_three"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="3. Do you get irritable and/or easily annoyed when anxious? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_three_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_three_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_three_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_three_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_three_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_three_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_four"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="4. Does worry or anxiety make you feel fatigued or worn out? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_four_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_four_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_four_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_four_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_four_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_four_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_five"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="5. Does worry or anxiety interfere with falling and/or staying asleep? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_five_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_five_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_five_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_five_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_five_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_five_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_six"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="6. Does worry or anxiety make it hard to concentrate? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_six_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_six_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_six_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_six_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_six_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_six_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_seven"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="7. Do you feel jumpy? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_seven_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_seven_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_seven_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_seven_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_seven_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_seven_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_eight"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="8. Do you worry about how well you do things? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_eight_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_eight_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_eight_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_eight_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_eight_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_eight_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_nine"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="9. Do you worry about things working out in the future? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_nine_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_nine_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_nine_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_nine_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_nine_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_nine_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_ten"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="10. Do you worry about things that have already happened in the past? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_ten_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_ten_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_ten_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_ten_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_ten_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_ten_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/anxiety_question_eleven"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="11. Do your muscles get tense when you are worried or anxious? *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/anxiety_eleven_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/anxiety_eleven_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_eleven_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_eleven_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_eleven_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/anxiety_eleven_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

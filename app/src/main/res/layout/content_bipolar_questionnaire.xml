@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bipolar Disorder Test"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/bipolar_question_one"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1. At times I am MUCH more talkative or speak MUCH faster than usual. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_one_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_one_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_one_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_one_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_one_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_one_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_two"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="2. There have been times when I was MUCH more active or did MANY more things than usual. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_two_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_two_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_two_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_two_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_two_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_two_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_three"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="3. I get into moods where I feel VERY speeded up or irritable. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_three_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_three_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_three_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_three_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_three_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_three_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_four"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="4. There have been times when I have felt both high (elated) and low (depressed) AT THE SAME TIME. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_four_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_four_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_four_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_four_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_four_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_four_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_five"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="5. At times I have been MUCH more interested in sex than usual. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_five_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_five_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_five_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_five_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_five_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_five_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_six"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="6. My self-confidence ranges from GREAT self-doubt to EQUALLY GREAT overconfidence. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_six_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_six_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_six_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_six_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_six_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_six_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_seven"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="7. There have been GREAT variations in the quantity or quality of my work. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_seven_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_seven_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_seven_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_seven_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_seven_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_seven_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_eight"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="8. FOR NO OBVIOUS REASON I sometimes have been VERY angry or hostile. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_eight_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_eight_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_eight_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_eight_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_eight_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_eight_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_nine"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="9. Sometimes I am mentally dull and at other times I think VERY creatively. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_nine_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_nine_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_nine_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_nine_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_nine_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_nine_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_ten"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="10. At times I am GREATLY interested in being with people and at other times I just want to be left alone with my thoughts. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_ten_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_ten_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_ten_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_ten_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_ten_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_ten_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_eleven"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="11. At some times I have GREAT optimism and at other times EQUALLY GREAT pessimism. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_eleven_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_eleven_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_eleven_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_eleven_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_eleven_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_eleven_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bipolar_question_twelve"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="12. Some of the time I show MUCH tearfulness and crying and at other times I laugh and joke EXCESSIVELY. *"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/bipolar_twelve_radio"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bipolar_twelve_never"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Never"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_twelve_rarely"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_twelve_sometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Sometimes"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_twelve_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:text="Often"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/bipolar_twelve_very_often"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Very Often"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>
