@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.HealHere.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_self_assesment"
+        android:name="com.example.HealHere.ui.selfassessment.SelfAssessmentFragment"
+        android:label="@string/menu_self_assesment"
+        tools:layout="@layout/fragment_self_assesment" />
+
+    <fragment
+        android:id="@+id/nav_personlized_plans"
+        android:name="com.example.HealHere.ui.personalizedplans.PersonalizedPlansFragment"
+        android:label="@string/menu_personalized_plans"
+        tools:layout="@layout/fragment_personalized_plans" />
+
+    <fragment
+        android:id="@+id/nav_tracker_logs"
+        android:name="com.example.HealHere.ui.trackerlog.TrackerLogFragment"
+        android:label="@string/menu_tracker_logs"
+        tools:layout="@layout/fragment_tracker_log" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.HealHere.ui.aboutus.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.HealHere.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_help_desk"
+        android:name="com.example.HealHere.ui.helpdesk.HelpDeskFragment"
+        android:label="@string/menu_help_desk"
+        tools:layout="@layout/fragment_help_desk" />
+
+</navigation>

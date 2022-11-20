@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Heal Here</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <!--<string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>-->
+    <string name="menu_self_assesment">Self Assesment</string>
+    <string name="menu_personalized_plans">Personalized Plans</string>
+    <string name="menu_tracker_logs">Tracker Logs</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help_desk">Help Desk</string>
+    <string name="menu_sign_out">Sign Out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
