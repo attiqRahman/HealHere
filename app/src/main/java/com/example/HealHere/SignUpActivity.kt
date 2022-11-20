@@ -30,10 +30,12 @@ class SignUpActivity : AppCompatActivity() {
             finish()
         }
 
+        binding.content.cancelBtn.setOnClickListener {
+            finish()
+        }
+
         val contex = this
-        binding.content.signupBtn.setOnClickListener {
-            //condition to represent if form inputs are valid; if input invalid, will set to false
-            var formValid = true
+        binding.content.signUpBtn.setOnClickListener {
 
             //Note: get data from input fields from content_sign_up.xml
             val username = binding.content.fieldUsername.text.toString()
@@ -42,21 +44,23 @@ class SignUpActivity : AppCompatActivity() {
             val verificationCode = binding.content.fieldVerificationCode.text.toString()
 
 
-            if (formValid) {
-                if(username.length > 0 && email.length>0 && password.length> 0 && verificationCode.length> 0){
-                    val user = UserModel(name = username, email = email, passwprd = password, code = verificationCode)
-                    val status = sqlitehelper.insertUser(user)
-                    if(status > -1){
-                        Toast.makeText(this,"User added",Toast.LENGTH_SHORT).show()
-                    }
-                    else{
-                        Toast.makeText(this,"User creation failed ",Toast.LENGTH_SHORT).show()
-                    }
-                }else{
-                    Toast.makeText(this,"Please fill all the fields ",Toast.LENGTH_SHORT).show()
+            if (username.length > 0 && email.length > 0 && password.length > 0 && verificationCode.length > 0) {
+                val user = UserModel(
+                    name = username,
+                    email = email,
+                    passwprd = password,
+                    code = verificationCode
+                )
+                val status = sqlitehelper.insertUser(user)
+                if (status > -1) {
+                    Toast.makeText(this, "User added", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "User creation failed ", Toast.LENGTH_SHORT).show()
                 }
-                //check if user exists, then blah blah blah
+            } else {
+                Toast.makeText(this, "Please fill all the fields ", Toast.LENGTH_SHORT).show()
             }
+            //check if user exists
         }
     }
 }
