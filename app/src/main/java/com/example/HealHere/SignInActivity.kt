@@ -45,7 +45,9 @@ class SignInActivity : AppCompatActivity() {
                     passwprd = password
                 )
 
-                val status = sqlitehelper.insertUser(user)
+
+                val status = sqlitehelper.checkUser(user)
+                System.out.println(status.toString())
                 if (status > -1) {
                     Toast.makeText(this, "Logged In", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@SignInActivity, MainActivity::class.java)

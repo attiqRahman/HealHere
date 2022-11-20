@@ -6,14 +6,23 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.HealHere.SQLHelper
+import com.example.HealHere.ScoreModel
 import com.example.HealHere.SelfAssessmentResultsActivity
+import com.example.HealHere.UserModel
+import com.example.HealHere.databinding.ActivitySignInBinding
 import com.example.HealHere.databinding.FragmentSelfAssesmentBinding
+import java.text.SimpleDateFormat
+import java.time.LocalDateTime
+import java.util.*
 
 class SelfAssessmentFragment : Fragment() {
 
     private var _binding: FragmentSelfAssesmentBinding? = null
 
     private val binding get() = _binding!!
+
+    private lateinit var sqlitehelper: SQLHelper
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -96,6 +105,18 @@ class SelfAssessmentFragment : Fragment() {
             var panic_q19 = binding.panicQuestionnaire.panicNineteenRadio!!.checkedRadioButtonId.toString()
             var panic_q20 = binding.panicQuestionnaire.panicTwentyRadio!!.checkedRadioButtonId.toString()
 
+            val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
+            val currentDate = sdf.format(Date())
+            System.out.println(" C DATE is  "+currentDate)
+
+            System.out.println(q1_answer)
+
+//            val user = ScoreModel(
+//                id = 0,
+//                date = currentDate,
+//
+//            )
+//            sqlitehelper.addScore()
             //to be continued...
             val intent = Intent(context, SelfAssessmentResultsActivity::class.java)
             startActivity(intent)
