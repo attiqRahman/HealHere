@@ -1,5 +1,6 @@
 package com.example.HealHere
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.Toast
@@ -47,6 +48,8 @@ class SignInActivity : AppCompatActivity() {
                 val status = sqlitehelper.insertUser(user)
                 if (status > -1) {
                     Toast.makeText(this, "Logged In", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@SignInActivity, MainActivity::class.java)
+                    startActivity(intent)
                 }
                 else {
                     Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()

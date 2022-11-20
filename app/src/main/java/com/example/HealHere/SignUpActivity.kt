@@ -1,5 +1,6 @@
 package com.example.HealHere
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -54,6 +55,8 @@ class SignUpActivity : AppCompatActivity() {
                 val status = sqlitehelper.insertUser(user)
                 if (status > -1) {
                     Toast.makeText(this, "User added", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@SignUpActivity, MainActivity::class.java)
+                    startActivity(intent)
                 } else {
                     Toast.makeText(this, "User creation failed ", Toast.LENGTH_SHORT).show()
                 }
